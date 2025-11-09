@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Stellr Solar — Smart Solar Installations</title>
+  <meta name="description" content="Stellr Solar helps homeowners and businesses switch to solar with fast quotes, clean installs, and transparent pricing." />
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700;800&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+  <script defer src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+  <script defer src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
+  <script defer src="script.js"></script>
+</head>
+<body>
+  <header class="nav" id="siteNav">
+    <a href="#" class="brand">
+      <img src="assets/thelogo.png" alt="Stellr Solar logo" class="logo" />
+      <span class="brand-text"><strong>STELLR</strong> <strong>SOLAR</strong></span>
+    </a>
+    <button class="hamburger" id="navToggle" aria-label="Open menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+    <nav class="nav-links" id="navMenu">
+      <a href="#services">Services</a>
+      <a href="#process">Process</a>
+      <a href="#benefits">Why Stellr</a>
+      <a href="#projects">Projects</a>
+      <a href="#testimonials">Testimonials</a>
+      <a href="#faq">FAQ</a>
+      <button class="btn-quote cta-wave animate-quote" data-open-modal>Get a Quote</button>
+    </nav>
+  </header>
+
+  <section class="hero" id="home" aria-label="Hero">
+    <div class="hero-media" role="img" aria-label="Solar panels on modern roof">
+      <video autoplay muted loop playsinline>
+        <source src="assets/thevideo.mp4" type="video/mp4" />
+      </video>
+    </div>
+    <div class="hero-content">
+      <h1>Power your home with <span class="accent">Stellr</span> Solar</h1>
+      <p>Bold, techy, and efficient installs. Transparent quotes. Pro support.</p>
+      <div class="hero-cta">
+        <button class="btn-quote animate-quote lg" data-open-modal>Get a Quote</button>
+        <a href="#services" class="ghost">Explore Services</a>
+      </div>
+      <ul class="hero-badges"></ul>
+    </div>
+  </section>
+
+  <section class="wrap" id="services">
+    <h2 class="section-title">Services</h2>
+    <div class="grid cards">
+      <article class="card">
+        <div class="icon">☀️</div>
+        <h3>Residential Solar</h3>
+        <p>High-efficiency arrays tailored for your roof and usage.</p>
+      </article>
+      <article class="card">
+        <div class="icon">🏢</div>
+        <h3>Commercial Solar</h3>
+        <p>Scale-ready solutions for shops, offices, and warehouses.</p>
+      </article>
+      <article class="card">
+        <div class="icon">🔋</div>
+        <h3>Battery Storage</h3>
+        <p>Store power and ride through outages, smartly.</p>
+      </article>
+      <article class="card">
+        <div class="icon">⚡</div>
+        <h3>EV Charging</h3>
+        <p>Clean charging setups for homes and parking lots.</p>
+      </article>
+    </div>
+  </section>
+
+  <section class="wrap" id="process">
+    <h2 class="section-title">How it works</h2>
+    <ol class="steps">
+      <li><span>1</span> Quick call &amp; bill check</li>
+      <li><span>2</span> Roof scan &amp; system design</li>
+      <li><span>3</span> Permits &amp; scheduling</li>
+      <li><span>4</span> Install &amp; activation</li>
+    </ol>
+  </section>
+
+  <section class="wrap" id="benefits">
+    <div class="grid split">
+      <div>
+        <h2 class="section-title">Why Stellr</h2>
+        <ul class="checks">
+          <li>Lower bills from day one</li>
+          <li>Clean energy, real savings</li>
+          <li>Top-tier hardware only</li>
+          <li>Local, Canadian support</li>
+        </ul>
+      </div>
+      <div class="callout">
+        <h3>Serving Canadian Provinces</h3>
+        <p>Alberta, Nova Scotia, Ontario &amp; more.</p>
+        <button class="btn-quote animate-quote" data-open-modal>Get a Quote</button>
+      </div>
+    </div>
+  </section>
+
+  <section class="wrap" id="projects">
+    <h2 class="section-title">Recent projects</h2>
+    <div class="grid gallery">
+      <img src="https://images.unsplash.com/photo-1508514177221-188b1cf16e9d?ixlib=rb-4.1.0&auto=format&fit=crop&q=80&w=1172" alt="Project 1" />
+      <img src="https://images.unsplash.com/photo-1497449493050-aad1e7cad165?q=80&w=1200&auto=format&fit=crop" alt="Project 2" />
+      <img src="https://images.unsplash.com/photo-1497436072909-60f360e1d4b1?q=80&w=1200&auto=format&fit=crop" alt="Project 3" />
+    </div>
+  </section>
+
+  <section class="wrap" id="testimonials">
+    <h2 class="section-title">What customers say</h2>
+    <div class="grid cards">
+      <article class="card">
+        <p>“Install was clean and quick. Loving the bills now.”</p>
+        <h4>— Alex M., Calgary</h4>
+      </article>
+      <article class="card">
+        <p>“Transparent quote, pro team, and sharp design.”</p>
+        <h4>— Priya S., Vancouver</h4>
+      </article>
+      <article class="card">
+        <p>“Battery backup saved us during an outage. Worth it.”</p>
+        <h4>— Daniel K., Edmonton</h4>
+      </article>
+    </div>
+  </section>
+
+  <section class="wrap" id="faq">
+    <h2 class="section-title">FAQ</h2>
+    <div class="faq">
+      <details>
+        <summary>How long does install take?</summary>
+        <p>Most homes: 1–2 days after permits. Larger systems vary.</p>
+      </details>
+      <details>
+        <summary>Do you handle permits?</summary>
+        <p>Yes—design, permits, and inspections are handled end-to-end.</p>
+      </details>
+      <details>
+        <summary>What panels do you use?</summary>
+        <p>Tier-1, high-efficiency modules with strong warranties.</p>
+      </details>
+      <details>
+        <summary>Can I add batteries later?</summary>
+        <p>Yes. We design for easy storage add-ons.</p>
+      </details>
+    </div>
+  </section>
+
+  <section class="wrap cta">
+    <h2>Ready to go solar?</h2>
+    <p>Get a precise quote fast. No pushy sales—just facts.</p>
+    <button class="btn-quote animate-quote lg" data-open-modal>Get a Quote</button>
+  </section>
+
+  <footer class="footer">
+    <div class="footer-grid">
+      <div>
+        <img src="assets/thelogo.png" alt="Stellr Solar" class="logo small" />
+        <p>Professional solar installs across Canada.</p>
+      </div>
+      <div>
+        <h4>Contact</h4>
+        <ul>
+          <li>Phone: <a href="tel:+1-555-123-4567">+1 (555) 123-4567</a></li>
+          <li>Email: <a href="mailto:hello@stellrsolar.com">hello@stellrsolar.com</a></li>
+          <li>Calgary, AB</li>
+        </ul>
+      </div>
+      <div>
+        <h4>Social</h4>
+        <ul class="socials">
+          <li><a href="#" aria-label="Instagram">Instagram</a></li>
+          <li><a href="#" aria-label="Facebook">Facebook</a></li>
+          <li><a href="#" aria-label="LinkedIn">LinkedIn</a></li>
+          <li><a href="#" aria-label="X">X</a></li>
+        </ul>
+      </div>
+    </div>
+    <p class="tiny">© <span id="year"></span> Stellr Solar. All rights reserved.</p>
+  </footer>
+
+  <dialog id="quoteModal" class="modal">
+    <form method="dialog" class="modal-content" id="quoteForm" novalidate>
+      <button class="close" type="button" aria-label="Close">×</button>
+      <h3>Get a Quote</h3>
+      <p class="muted">We will connect you with a solar consultant soon.</p>
+      <div class="form-grid">
+        <label>Full name<input required name="name" placeholder="Your name" /></label>
+        <label>Email<input required type="email" name="email" placeholder="you@email.com" /></label>
+        <label>Phone<input required name="phone" placeholder="+1 ..." /></label>
+        <label>Postal Code (Canada)
+          <input required name="postal" placeholder="A1A 1A1" pattern="[A-Za-z]\d[A-Za-z][ -]?\d[A-Za-z]\d" />
+        </label>
+        <label>Average monthly bill<input name="bill" placeholder="$" /></label>
+        <label>Roof type<input name="roof" placeholder="Asphalt, metal, flat…" /></label>
+        <label class="full">Notes<textarea name="notes" rows="3" placeholder="Anything we should know?"></textarea></label>
+      </div>
+      <p class="consent tiny">By submitting, you consent to be contacted by phone or email.</p>
+      <div class="modal-actions">
+        <button class="btn-quote animate-quote" type="submit">Send</button>
+      </div>
+      <p id="formStatus" class="status" role="status" aria-live="polite"></p>
+    </form>
+  </dialog>
+</body>
+</html>
