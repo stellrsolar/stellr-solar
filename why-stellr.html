@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Why Stellr Solar</title>
+  <meta name="description" content="Discover why Stellr Solar stands apart — with top-tier safety standards, durable products, and long-term Canadian performance guarantees." />
+  <link rel="icon" href="assets/light-logo.png" type="image/png" />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700;800&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+  <script defer src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+  <script defer src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
+  <script defer src="script.js"></script>
+</head>
+<body>
+  <header class="nav" id="siteNav">
+    <a href="index.html" class="brand">
+      <img src="assets/thelogo.png" alt="Stellr Solar logo" class="logo" />
+      <span class="brand-text"><strong>STELLR</strong> <strong>SOLAR</strong></span>
+    </a>
+    <button class="hamburger" id="navToggle" aria-label="Open menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+    <nav class="nav-links" id="navMenu">
+      <a href="services.html">Services</a>
+<a href="index.html#quote-process">Process</a>
+<a href="why-stellr.html">Why Stellr</a>
+<a href="products.html">Products</a>
+<a href="index.html#projects">Projects</a>
+<a href="index.html#testimonials">Testimonials</a>
+<a href="index.html#faq">FAQ</a>
+<a href="index.html#contact">Contact</a>
+
+      <button class="btn-quote cta-wave animate-quote" data-open-modal>Get a Quote</button>
+    </nav>
+  </header>
+
+  <main>
+    <section class="band band--white" id="benefits">
+      <div class="wrap">
+        <h2 class="section-title">Why Stellr Solar</h2>
+
+        <h3>Our Core Commitment: Uncompromised Quality & Safety</h3>
+
+        <div class="grid split">
+          <div>
+            <h4>1. Safety Built on CEC and OH&S Excellence</h4>
+            <p>Every installation is treated as critical infrastructure. We design and install all systems to meet or exceed the Canadian Electrical Code (CEC), ensuring compliance with rules like Rapid Shutdown (Rule 64-218). Our teams follow strict OH&S practices, including daily Field Level Hazard Assessments and full WCB/WSIB compliance.</p>
+          </div>
+          <div>
+            <h4>2. Products Engineered for Durability</h4>
+            <p>We use only Tier-1 modules rated for a 5400 Pa snow load and optimized temperature coefficients. Whether your system uses String Inverters or Microinverters, each design is tailored for performance, safety, and long-term reliability.</p>
+          </div>
+          <div>
+            <h4>3. Partnership That Lasts 30+ Years</h4>
+            <p>We stay with you long after installation. From annual performance checks to thermal imaging diagnostics, our proactive maintenance ensures maximum lifetime output. All systems are protected under our 25-year product and 30-year performance warranties.</p>
+          </div>
+        </div>
+
+        <h3>Why Choose Stellr Solar?</h3>
+        <ul class="checks">
+          <li>Canadian Solar Experts with local knowledge and certified crews</li>
+          <li>Access to all major provincial and federal solar incentive programs</li>
+          <li>Top-tier safety standards and engineering-grade installations</li>
+          <li>Long-term performance, minimal maintenance, and verified savings</li>
+        </ul>
+
+        <div class="callout" style="text-align:center; margin-top:20px;">
+          <h3>Stellr Solar — Powering Canada's Clean Energy Future</h3>
+          <p>Built on integrity, driven by technology, and trusted by homeowners across Nova Scotia.</p>
+          <button class="btn-quote animate-quote" data-open-modal>Get a Quote</button>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-grid">
+      <div>
+        <img src="assets/thelogo.png" alt="Stellr Solar" class="logo small" />
+        <p>Professional solar installs across Nova Scotia.</p>
+      </div>
+      <div>
+        <h4>Contact</h4>
+        <ul>
+          <li>Phone: <a href="tel:+15875851816">+1 (587) 585-1816</a></li>
+          <li>Email: <a href="mailto:info@stellrsolar.ca">info@stellrsolar.ca</a></li>
+          <li>Dartmouth, NS</li>
+        </ul>
+      </div>
+      <div>
+        <h4>Social</h4>
+        <ul class="socials">
+          <li><a href="#" aria-label="Instagram">Instagram</a></li>
+          <li><a href="#" aria-label="Facebook">Facebook</a></li>
+          <li><a href="#" aria-label="LinkedIn">LinkedIn</a></li>
+          <li><a href="#" aria-label="X">X</a></li>
+        </ul>
+      </div>
+    </div>
+    <p class="tiny">© <span id="year"></span> Stellr Solar. All rights reserved.</p>
+  </footer>
+
+  <dialog id="quoteModal" class="modal">
+    <form method="dialog" class="modal-content" id="quoteForm" novalidate>
+      <button class="close" type="button" aria-label="Close">×</button>
+      <h3>Get a Quote</h3>
+      <p class="muted">We will connect you with a solar consultant soon.</p>
+      <div class="form-grid">
+        <label>Full name<input required name="name" placeholder="Your name" /></label>
+        <label>Email<input required type="email" name="email" placeholder="you@email.com" /></label>
+        <label>Phone<input required name="phone" placeholder="+1 ..." /></label>
+        <label>Postal Code (Canada)
+          <input required name="postal" placeholder="A1A 1A1" pattern="[A-Za-z]\d[A-Za-z][ -]?\d[A-Za-z]\d" />
+        </label>
+        <label>Average monthly bill<input name="bill" placeholder="$" /></label>
+        <label>Roof type<input name="roof" placeholder="Asphalt, metal, flat…" /></label>
+        <label class="full">Notes<textarea name="notes" rows="3" placeholder="Anything we should know?"></textarea></label>
+      </div>
+      <p class="consent tiny">By submitting, you consent to be contacted by phone or email.</p>
+      <div class="modal-actions">
+        <button class="btn-quote animate-quote" type="submit">Send</button>
+      </div>
+      <p id="formStatus" class="status" role="status" aria-live="polite"></p>
+    </form>
+  </dialog>
+
+  <div class="fullscreen-img" id="fullscreenImg">
+    <span class="close" id="closeFullscreen">&times;</span>
+    <img src="" alt="Full-size project image">
+  </div>
+</body>
+</html>
