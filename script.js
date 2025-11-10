@@ -113,3 +113,21 @@ document.addEventListener("DOMContentLoaded", () => {
     localStorage.setItem(KEY, "1");
   }
 });
+
+const galleryImgs = document.querySelectorAll(".gallery img");
+const fullscreen = document.getElementById("fullscreenImg");
+const fullImg = fullscreen.querySelector("img");
+const closeFs = document.getElementById("closeFullscreen");
+
+galleryImgs.forEach(img => {
+  img.addEventListener("dblclick", () => {
+    fullImg.src = img.src;
+    fullscreen.style.display = "flex";
+  });
+});
+
+closeFs.addEventListener("click", () => fullscreen.style.display = "none");
+fullscreen.addEventListener("click", e => {
+  if (e.target === fullscreen) fullscreen.style.display = "none";
+});
+ 
