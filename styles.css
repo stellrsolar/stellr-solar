@@ -78,16 +78,29 @@ body {
 @media (max-width: 900px) {
   .hamburger { display:block; }
   .nav-links {
-    position: fixed; right: 16px; top: 64px;
-    background: #0e121a; border: 1px solid var(--line);
-    border-radius: 12px; padding: 14px;
-    display: grid; gap: 10px;
+    position: fixed;
+    right: 0;
+    top: 64px;
+    background: #0e121a;
+    border: 1px solid var(--line);
+    border-radius: 0 0 0 12px;
+    padding: 18px 24px;
+    display: grid;
+    gap: 14px;
+    width: 85vw; /* wider dropdown */
     transform-origin: top right;
-    transform: scaleY(0); opacity: 0; pointer-events: none;
-    transition: transform .15s ease, opacity .15s ease;
+    transform: scaleY(0);
+    opacity: 0;
+    pointer-events: none;
+    transition: transform .2s ease, opacity .2s ease;
   }
-  .nav.open .nav-links { transform: scaleY(1); opacity: 1; pointer-events: auto; }
+  .nav.open .nav-links {
+    transform: scaleY(1);
+    opacity: 1;
+    pointer-events: auto;
+  }
 }
+
 
 .btn-quote {
   --g1: color-mix(in oklab, var(--accent), #fff 10%);
