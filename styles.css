@@ -87,7 +87,7 @@ body {
     padding: 18px 24px;
     display: grid;
     gap: 14px;
-    width: 85vw; /* wider dropdown */
+    width: 60vw; /* wider dropdown */
     transform-origin: top right;
     transform: scaleY(0);
     opacity: 0;
@@ -356,3 +356,4 @@ input:focus, select:focus, textarea:focus { outline: 2px solid color-mix(in okla
   border: 1px solid #ddd;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
 }
+
