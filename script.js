@@ -113,5 +113,3 @@ document.addEventListener("DOMContentLoaded", () => {
     localStorage.setItem(KEY, "1");
   }
 });
-
-
