@@ -87,7 +87,7 @@ body {
     padding: 18px 24px;
     display: grid;
     gap: 14px;
-    width: 60vw; /* wider dropdown */
+    width: 85vw; /* wider dropdown */
     transform-origin: top right;
     transform: scaleY(0);
     opacity: 0;
@@ -178,9 +178,41 @@ body {
 .cards { grid-template-columns: repeat(auto-fit, minmax(230px, 1fr)); }
 .card { background: var(--card); border: 1px solid var(--line); border-radius: 16px; padding: 20px; }
 .card .icon { font-size: 1.4rem; background: #0e121a; border: 1px solid var(--line); border-radius: 12px; width: 40px; height: 40px; display: grid; place-items: center; margin-bottom: 10px; }
-.steps { display: grid; grid-template-columns: repeat(auto-fit, minmax(230px,1fr)); gap: 16px; list-style: none; padding: 0; margin: 0; }
-.steps li { background: var(--card); border: 1px solid var(--line); border-radius: 16px; padding: 18px; display: flex; align-items: center; gap: 12px; }
-.steps span { display: grid; place-items: center; width: 30px; height: 30px; border-radius: 999px; background: var(--accent); color: #03151b; font-weight: 800; font-family: "Montserrat", sans-serif; }
+/* replace your .steps and .steps span rules */
+.steps {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+  gap: 16px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.steps li {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  align-items: start;
+  gap: 12px;
+  background: var(--card);
+  border: 1px solid var(--line);
+  border-radius: 16px;
+  padding: 18px;
+}
+.steps li > span {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: clamp(28px, 2.6vw, 40px);
+  aspect-ratio: 1 / 1;           /* forces a true circle */
+  border-radius: 50%;
+  background: var(--accent);
+  color: #03151b;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 800;
+  font-size: clamp(.9rem, 1.1vw, 1.05rem);
+  line-height: 1;
+  flex: 0 0 auto;
+}
+
 
 .split { grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); align-items: start; }
 .checks { list-style: none; padding: 0; margin: 0; display: grid; gap: 10px; }
@@ -356,4 +388,3 @@ input:focus, select:focus, textarea:focus { outline: 2px solid color-mix(in okla
   border: 1px solid #ddd;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
 }
-
